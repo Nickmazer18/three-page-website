@@ -26,7 +26,7 @@ h3 {
 
 p {
 
-  
+
 }
 
 footer {
@@ -63,6 +63,109 @@ footer {
   background-color: #B0C4DE;
   transition: 0.3s background-color ease-in-out;
 }
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cotainer, .row{
+  width: 100%;
+}
+
+.container{
+  padding: 0 10px;
+
+}
+.row{
+
+}
+.col-1{
+  padding: 10px;
+  display: inline-block;
+  width: 33%;
+}
+
+.col-3{
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+.col-2-left{
+  padding: 10px;
+  float: left;
+  width: 66%;
+}
+
+.col-2-right{
+  padding: 10px;
+  float: right;
+  width: 66%;
+}
+
+  @media screen and (max-width: 992px){
+
+    [class^='col-2']{
+      float: none;
+      margin: 0 auto;
+    }
+
+    .row{
+      width: 100%;
+      padding: 0;
+    }
+
+    .col-1:not(:last-child){
+      display: block;
+      width: 48%;
+
+    }
+
+    .col-1:first-child{
+      float: left;
+    }
+
+    .col-1: nth-child(2){
+      float: right;
+    }
+
+    .col-1:last-child{
+      margin-top: 12px;
+      width: 100%;
+    }
+  }
+
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px){
+
+   [class^='col-2']{
+      width: 100%;
+    }
+
+  .row .col-1{
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Roboto:400,700");
 .sns a {
@@ -299,9 +402,3 @@ footer {
 .face .mouth.right {
   right: 37%;
 }
-
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 480px) {}
