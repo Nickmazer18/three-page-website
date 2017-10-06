@@ -1,4 +1,127 @@
 body {
-  background-color: gray;
+  background: #B0C4DE;
+  font: 26px;
+  font-family: serif, "Times New Roman";
+  width: 90%;
+  margin: 0 auto;
+}
 
+
+
+
+h3 {
+  margin-top: 50px;
+}
+
+p {
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.topper h1 {
+  margin-top: 85px;
+  width: 100%;
+  text-align: center: 55%;
+}
+
+.popper p{
+  width: 100%;
+  text-align: left;
+}
+
+.footer-text p {
+  width: 60%;
+  border: 2px dashed #B0C4DE;
+  margin: 10px auto;
+}
+
+.skyline {
+  width: 50%;
+  margin: 75px auto auto auto;
+}
+
+.coding{
+  width: 50%;
+  margin: 75px auto auto 396px;
+}
+
+.footer-text p {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contact-text p{
+  text-align: left;
+  margin:
+}
+
+
+
+.nav-header {
+  font-weight: bold;
+  background-color: #8FBC8F;
+  box-shadow: 0 0 6px black;
+  position: fixed;
+  height: 60px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  z-index: 999;
+}
+
+.btn {
+  background-color: gray;
+  border: 3px solid #444444;
+  border-radius: 5px;
+  color: white;
+  font-family: verdana, "Times New Roman";
+  padding: 6px 20px;
+  margin-left: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s background-color ease-in-out;
+}
+
+.btn:hover {
+  background-color: #B0C4DE;
+  transition: 0.3s background-color ease-in-out;
+}
+
+/*Media Query */
+
+@media screen and (max-width: 1000px) and (min-width: 993px) {
+  .topper h1 {
+    background-color: yellow;
+  }
+  .footer-text {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .topper h1 {
+    background-color: green;
+  }
+  .footer-text {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .topper h1 {
+    background-color: blue;
+  }
+  .footer-text {
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 0px) {
+  .topper h1 {
+    background-color: red;
+  }
+  .footer-text {
+    background-color: yellow;
+  }
 }

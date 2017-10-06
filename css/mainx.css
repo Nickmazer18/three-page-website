@@ -27,6 +27,7 @@ p {
   margin-top: 85px;
   width: 100%;
   text-align: center;
+  border: 2px dashed #B0C4DE;
 }
 
 .popper p{
